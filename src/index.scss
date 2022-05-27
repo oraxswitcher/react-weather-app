@@ -1,26 +1,29 @@
 body {
   margin: 0;
   padding: 0;
-  
+
 
 
 }
+
 // ---------------for edit ----------------
-.container0{
+.container0 {
   background: url(./imgs/sunny.jpg);
   background-attachment: inherit;
   background-repeat: no-repeat;
   background-size: 101% 100%;
   background-position: center;
 }
-.container1{
+
+.container1 {
   background: url(./imgs/cloudy.jpg);
   background-attachment: inherit;
   background-repeat: no-repeat;
   background-size: 101% 100%;
   background-position: center;
 }
-.container2{
+
+.container2 {
   background: url(./imgs/rainy.jpg);
   background-attachment: inherit;
   background-repeat: no-repeat;
@@ -69,15 +72,32 @@ body {
   justify-content: center;
   color: #eee;
 
-  input {
-    border: none;
-    border-radius: 8px;
-    padding: 2px;
-    padding-left: 7px;
-    height: 7%;
-    width: 70%;
-    opacity: 0.7;
+
+  .form {
+    width: 84%;
+    display: flex;
+    height: 6%;
+    justify-content: space-evenly;
+
+    input {
+      border: none;
+      border-radius: 8px;
+      padding: 2px;
+      padding-left: 7px;
+      height: 100%;
+      width: 70%;
+      opacity: 0.7;
+    }
+
+    button {
+      border: none;
+      border-radius: 10px;
+      background-color: #fff;
+      height: 100%;
+      width: 23%;
+    }
   }
+
 
   .info {
     text-align: center;
@@ -114,9 +134,10 @@ body {
 
     h4 {
       font-size: 24px;
-    margin: 3% auto;
-    margin-left: 9%;
-      span{
+      margin: 3% auto;
+      margin-left: 9%;
+
+      span {
         color: #67771f;
       }
     }

@@ -76,14 +76,33 @@ body {
   color: #eee;
 }
 
-.container input {
+.container .form {
+  width: 84%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 6%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.container .form input {
   border: none;
   border-radius: 8px;
   padding: 2px;
   padding-left: 7px;
-  height: 7%;
+  height: 100%;
   width: 70%;
   opacity: 0.7;
+}
+
+.container .form button {
+  border: none;
+  border-radius: 10px;
+  background-color: #fff;
+  height: 100%;
+  width: 23%;
 }
 
 .container .info {

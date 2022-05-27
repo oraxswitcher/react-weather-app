@@ -29,6 +29,15 @@ function App() {
         .catch((err) => console.log(err));
     }
   };
+  const search1 = () => {
+    callAPi()
+        .then((data) => {
+          setWeather(data);
+          setQuery("");
+          console.log(data);
+        })
+        .catch((err) => console.log(err));
+  };
 
   
 
@@ -95,15 +104,19 @@ function App() {
               : "container container0"
           }
         >
-          <input
-            type="search"
-            name="search"
-            id="haha"
-            placeholder="Search for location"
-            onChange={(e) => setQuery(e.target.value)}
-            value={query}
-            onKeyPress={search}
-          />
+          <div className="form">
+            <input
+              type="search"
+              name="search"
+              id="haha"
+              placeholder="Search for location"
+              onChange={(e) => setQuery(e.target.value)}
+              value={query}
+              onKeyPress={search}
+            />
+            <button onClick={search1}>Search</button>
+          </div>
+          
           {typeof weather.current !== "undefined" ? (
             <>
               <div className="info">
