@@ -2,7 +2,7 @@ import { useState } from "react";
 
 const API = {
   key: "6db0e956f4f34370a9e164000222605",
-  base: "http://api.weatherapi.com/v1/current.json?",
+  base: "https://api.weatherapi.com/v1/current.json?",
 };
 
 function App() {
