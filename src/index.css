@@ -28,11 +28,11 @@ body {
 }
 
 .back-img {
-  height: 100vh;
+  height: 35rem;
   background: url(./imgs/background.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: 100vw 100vh;
   -webkit-filter: blur(2px);
           filter: blur(2px);
   position: absolute;
@@ -41,7 +41,7 @@ body {
 }
 
 .app {
-  height: 100vh;
+  height: 35rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -53,7 +53,7 @@ body {
           justify-content: center;
 }
 
-.container {
+.app .container {
   width: 25%;
   height: 79%;
   min-width: 310px;
@@ -76,7 +76,7 @@ body {
   color: #eee;
 }
 
-.container .form {
+.app .container .form {
   width: 84%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -87,7 +87,7 @@ body {
           justify-content: space-evenly;
 }
 
-.container .form input {
+.app .container .form input {
   border: none;
   border-radius: 8px;
   padding: 2px;
@@ -97,7 +97,7 @@ body {
   opacity: 0.7;
 }
 
-.container .form button {
+.app .container .form button {
   border: none;
   border-radius: 10px;
   background-color: #fff;
@@ -105,15 +105,15 @@ body {
   width: 23%;
 }
 
-.container .info {
+.app .container .info {
   text-align: center;
 }
 
-.container .info h3 {
+.app .container .info h3 {
   margin-top: -22px;
 }
 
-.container .temp {
+.app .container .temp {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -129,28 +129,28 @@ body {
   border-radius: 33%;
 }
 
-.container .temp h2 {
+.app .container .temp h2 {
   font-size: 31px;
 }
 
-.container .cl {
+.app .container .cl {
   margin-top: 3%;
 }
 
-.container .humwin {
+.app .container .humwin {
   width: 90%;
   background-color: #d8d9e0;
   border-radius: 10px;
   color: #01254d;
 }
 
-.container .humwin h4 {
+.app .container .humwin h4 {
   font-size: 24px;
   margin: 3% auto;
   margin-left: 9%;
 }
 
-.container .humwin h4 span {
+.app .container .humwin h4 span {
   color: #67771f;
 }
 /*# sourceMappingURL=index.css.map */

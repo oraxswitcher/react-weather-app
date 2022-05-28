@@ -8,7 +8,7 @@ const API = {
 function App() {
   const [time, setTime] = useState("");
   const [query, setQuery] = useState("");
-  const [weather, setWeather] = useState({});
+  const [weather, setWeather] = useState('');
 
   
   const callAPi = async () => {
@@ -81,7 +81,7 @@ function App() {
     let hour = t.getHours();
 
     setTime(
-      `${hour}:${
+      `${hour.toString().length === 1 ? `0${hour.toString()}` : hour}:${
         minute.toString().length === 1 ? `0${minute.toString()}` : minute
       }:${seconds.toString().length === 1 ? `0${seconds.toString()}` : seconds}`
     );
